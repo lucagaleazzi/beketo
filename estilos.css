@@ -1,0 +1,877 @@
+/*Ajustes generales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+/*Cuerpo de la pagina de inicio*/
+.body-inicio{
+    width: 100%;
+    height: 180vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px auto 120px;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+}
+/*Header*/
+header{
+    background-color: black;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    margin-left: 50px;
+}
+nav{
+    margin-right: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 5px;
+}
+/*Ajustes de menu para las diferentes paginas*/
+/*inicio*/
+.inicio-inicio{
+    background-color: #35363a;
+    border-radius: 5px;
+}
+.productos-inicio:hover{
+    background-color: #35363a;
+    border-radius: 5px;
+    transition: .3s;
+}
+.recetas-inicio:hover{
+    background-color: #35363a;
+    border-radius: 5px;
+    transition: .3s; 
+}
+/*productos*/
+.productos-productos{
+    background-color: #35363a;
+    border-radius: 5px;
+}
+.inicio-productos:hover{
+    background-color: #35363a;
+    border-radius: 5px;
+    transition: .3s; 
+}
+.recetas-productos:hover{
+    background-color: #35363a;
+    border-radius: 5px;
+    transition: .3s; 
+}
+/*recetas*/
+.recetas-recetas{
+    background-color: #35363a;
+    border-radius: 5px;
+}
+.inicio-recetas:hover{
+    background-color: #35363a;
+    border-radius: 5px;
+    transition: .3s; 
+}
+.productos-recetas:hover{
+    background-color: #35363a;
+    border-radius: 5px;
+    transition: .3s; 
+}
+/*ajustes responsive para el header*/
+
+/*main de la pagina de inicio*/
+.main-inicio{
+    background-color: #35363a;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "presentacion presentacion"
+    "dulzuras salados"
+    ;
+}
+.presentacion-inicio{
+    grid-area: presentacion;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./fotosbk/inicio/gif-presentacion.gif);
+    background-position: center;
+    background-size: cover;
+}
+.dulzuras-inicio{
+    background-image: url(./fotosbk/inicio/alfajores-fondo.jpg);
+    background-position: center;
+    grid-area: dulzuras;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: #000 solid 5px;
+    border-right: #000 solid 2.5px;;
+}
+.texto-dulzuras-inicio{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.alfajores-inicio{
+    width: 400px;
+    border: white solid 2px;
+    border-radius: 10%;
+}
+.alfajores-inicio:hover{
+    width: 500px;
+    transition: .5s;
+}
+.salados-inicio{
+    background-image: url(./fotosbk/inicio/grisines-fondo.jpg);
+    background-position: center;
+    grid-area: salados;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: #000 solid 5px;
+    border-left: #000 solid 2.5px;
+}
+.texto-salados-inicio{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.grisines-inicio{
+    width: 300px;
+    border: white solid 2px;
+    border-radius: 10%;
+}
+.grisines-inicio:hover{
+    width: 350px;
+    transition: .5s;
+}
+/*footer*/
+footer{
+    background-color: black;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+}
+.pie{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suscribite{
+    color: white;
+    cursor:default;
+}
+.email{
+    border: none;
+    border-radius: 5px;
+    background-color: #35363a;
+    padding: 5px 5px;
+    color: white;
+}
+.enviar{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+#avion{
+    font-size: 14px;
+}
+.logos{
+    display: flex;
+    margin-right: 50px;
+}
+.insta{
+    background-color: #35363a;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+#insta-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.insta:hover{
+    background-color: #f34d59;
+    transition: .3s;
+}
+.wpp{
+    background-color: #35363a;
+    padding: 8px 10px;
+    border-radius: 50%; 
+    margin-left: 10px;
+}
+#wpp-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+}
+.wpp:hover{
+    background-color: #2eb843;
+    transition: .3s;
+}
+.sub-pie{
+    width: 100%;
+    height: 20px;
+    background-color: #35363a;
+}
+.pedidos{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+}
+/*Tablet*/
+@media (max-width:768px){
+    /*Cuerpo de la pagina de inicio*/
+.body-inicio{
+    width: 100%;
+    height: 260vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px auto 300px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/*Header*/
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    margin-left: 0;
+}
+.nav{
+    margin-right: 0;
+}
+nav ul li a{
+    padding: 2px 6px;
+}
+/*main de la pagina de inicio*/
+.main-inicio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "presentacion"
+    "dulzuras" 
+    "salados"
+    ;
+}
+.presentacion-inicio{
+    grid-area: presentacion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dulzuras-inicio{
+    grid-area: dulzuras;
+    border: #000 solid 3px;
+    justify-content: space-around;
+}
+.alfajores-inicio{
+    width: 300px;
+    border: white solid 2px;
+    border-radius: 10%;
+}
+.alfajores-inicio:hover{
+    width: 300px;
+    transition: 0;
+}
+.salados-inicio{
+    grid-area: salados;
+    border: #000 solid 3px;
+    justify-content: space-around;
+}
+.grisines-inicio{
+    width: 200px;
+    border: white solid 2px;
+    border-radius: 10%;
+    margin: 10px;
+}
+.grisines-inicio:hover{
+    width: 200px;
+    transition: 0;
+}
+/*footer*/
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+}
+.pie{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.logos{
+    margin-right: 0;
+}
+}
+/*Cuerpo de la pagina de productos*/
+.body-productos{
+    width: 100%;
+    height: 180vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px auto 120px;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+}
+/*Main de la pagina de productos*/
+.main-productos{
+    background-color: #35363a;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+/*seccion de productos dulces*/
+.dulzuras-productos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "budin alfajor choco coco"
+    "granola muffins triangulitos veganas"
+    ;
+}
+.texto-productos{
+    color: black;
+    text-align: center;
+}
+.titulo-productos{
+    color: black;
+    text-align: center;
+}
+.budin-productos{
+    margin: 30px;
+    padding: 20px;
+    border: #000 solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: budin;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-budin-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-budin-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border: #000 solid 2px;
+}
+.alfajores-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: alfajor;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-alfajor-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-alfajor-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.chocolate-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: choco;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-chocolate-productos{
+    width: 200px;
+    border-radius: 10%;
+} 
+.img-chocolate-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.coco-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: coco;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-coco-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-coco-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.granola-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: granola;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-granola-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-granola-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.muffins-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: muffins;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-muffins-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-muffins-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.triangulitos-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: triangulitos;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}  
+.img-triangulitos-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-triangulitos-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.veganas-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: veganas;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-veganas-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-veganas-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+/*seccion de productos salados*/
+.salados-productos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "crackers grisines queso bizco"
+    ;
+}
+.crackers-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: crackers;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-crackers-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-crackers-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.grisines-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: grisines;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-grisines-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-grisines-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.queso-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: queso;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-queso-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-queso-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+.bizco-productos{
+    margin: 30px;
+    padding: 20px;
+    border: black solid 2px;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    background-color:white;
+    grid-area: bizco;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-bizco-productos{
+    width: 200px;
+    border-radius: 10%;
+}
+.img-bizco-productos:hover{
+    opacity: 0.3;
+    transition: .5s;
+    border:black solid 2px;
+}
+/*Tablet*/
+@media (max-width:768px){
+    /*Cuerpo de la pagina de productos*/
+.body-productos{
+    width: 100%;
+    height: 360vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 140px auto 300px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+/*Main de la pagina de productos*/
+.main-productos{
+    grid-area: main;
+}
+/*seccion de productos dulces*/
+.dulzuras-productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "budin alfajor"
+    "choco coco"
+    "granola muffins" 
+    "triangulitos veganas"
+    ;
+}
+.budin-productos{
+    grid-area: budin;
+}
+.img-budin-productos:hover{
+    opacity: 0.3;
+}
+.alfajores-productos{
+    grid-area: alfajor;
+}
+.chocolate-productos{
+    grid-area: choco;
+}
+.coco-productos{
+    grid-area: coco;
+}
+.granola-productos{
+    grid-area: granola;
+}
+.muffins-productos{
+    grid-area: muffins;
+}
+.triangulitos-productos{
+    grid-area: triangulitos;
+}
+.veganas-productos{
+    grid-area: veganas;
+}
+/*seccion de productos salados*/
+.salados-productos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "crackers grisines"
+    "queso bizco"
+    ;
+}
+.crackers-productos{
+    grid-area: crackers;
+}
+.grisines-productos{
+    grid-area: grisines;
+}
+.queso-productos{
+    grid-area: queso;
+}
+.bizco-productos{
+    grid-area: bizco;
+}
+}
+/*cuerpo de la seccion de recetas*/
+.body-recetas{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 120px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+.main{
+    background-color: #35363a;
+    display: flex;
+    grid-area: main;
+    justify-content: center;
+    align-items: center;
+}
+.panmicro{
+    background-color: white;
+    border-radius: 10%;
+    border: black solid 2px;
+    padding: 20px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "titulo titulo"
+    "pan texto"
+    ;
+}
+.titulo-recetas{
+    text-align: center;
+    grid-area: titulo;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.pan{
+    grid-area: pan;
+    width: 300px;
+    border-radius: 10%;
+    border: black solid 2px;
+}
+.texto-recetas{
+    grid-area: texto;
+    margin: 50px;
+    font-size: 30px;
+}
+.otrareceta{
+    background-color: white;
+    border-radius: 10%;
+    border: black solid 2px;
+    padding: 20px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 
+    "titulo titulo"
+    "imagen texto"
+    ;
+}
+.imagen-recetas{
+    grid-area: imagen;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    border: black 2px solid;
+    background-color: red;
+}
+.texto-imagen{
+    text-align: center;
+}
+/*Tablet para recetas*/
+@media (max-width:768px){
+    /*cuerpo de la seccion de recetas*/
+.body-recetas{
+    width: 100%;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 300px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+.panmicro{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: 
+    "titulo"
+    "pan"
+    "texto"
+    ;
+}
+.titulo-recetas{
+    text-align: center;
+    grid-area: titulo;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.pan{
+    grid-area: pan;
+    width: 300px;
+    border-radius: 10%;
+    border: black solid 2px;
+    margin: auto;
+}
+.texto-recetas{
+    grid-area: texto;
+    margin: 50px;
+    font-size: 20px;
+}
+.otrareceta{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: 
+    "titulo"
+    "imagen"
+    "texto"
+}
+.imagen-recetas{
+    margin: auto;
+}
+}
