@@ -1,102 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="./fotosbk/logos/favicon.png">
-<script src="https://kit.fontawesome.com/fbbac18cfd.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilos.css">
-<title>Productos</title>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fbbac18cfd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="estilos.css">
+        <title>Document</title>
 </head>
-<body class="body-productos">
+<body class="body productos">
     <header class="header">
-        <div class="logo-superior">
-            <img src="./fotosbk/logos/logobk.jpg" alt="logo" class="logo">
-          </div>
-          <div class="menu">
-            <nav class="nav">
-              <ul class="ul">
-                <li><a href="index.html" class="inicio-productos">Inicio</a></li>
-                <li><a href="productos.html" class="productos-productos">Productos</a></li>
-                <li><a href="recetas.html" class="recetas-productos">Recetas</a></li>
-              </ul>
-            </nav>
-          </div>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid contenedor">
+            <div class="logotipo">
+              <a class="navbar-brand" href="#"><img src="./fotosbk/logos/logobk.jpg" alt="logo" width="80px" class="logo"></a>
+            </div>
+              <button class="navbar-toggler icono-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon icono-menu"></span>
+              </button>
+              <div class="collapse navbar-collapse menu" id="navbarNav">
+                <ul class="navbar-nav lista-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="recetas.html">Recetas</a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+        </nav>
     </header>
     <main class="main-productos">
-        <section class="dulzuras-productos">
-            <div class="budin-productos">
-                <h2 class="titulo-productos">Budin de limon</h2>
-                <img src="./fotosbk/productos/dulzuras/budlim.jpg" alt="budin de limon" class="img-budin-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolorum numquam porro est libero sed!</p>
+      <br>
+        <section class="dulces">
+            <div class="titulo">
+            <h1 class="dulzuras-titulo">Dulzuras</h1>
             </div>
-            <div class="alfajores-productos">
-                <h2 class="titulo-productos">Alfajores</h2>
-                <img src="./fotosbk/productos/dulzuras/alfajores.jpg" alt="alfajores" class="img-alfajor-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magni quod quaerat, natus deserunt laudantium!</p>
+      <br>
+            <div class="line1">
+            <div class="card alfa" style="width: 18rem;">
+                <img src="./fotosbk/inicio/alfajores.jpg" class="card-img-top alfajores" alt="alfajores">
+                <div class="card-body caja">
+                  <h5 class="card-title">Alfajores</h5>
+                  <p class="card-text">Alfajores hechos con harina de almendras, rellenos con pasta de mani y dulce de leche endulzado con stevia 👌</p>
+                </div>
             </div>
-            <div class="chocolate-productos">
-                <h2 class="titulo-productos">Galletas de chocolate</h2>
-                <img src="./fotosbk/productos/dulzuras/chocolate.jpg" alt="galletas chocolate" class="img-chocolate-productos">
-                <p class="texto-productos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero vitae illo beatae ratione ex inventore!</p>
+            
+            <div class="card budlim" style="width: 18rem;">
+            <img src="./fotosbk/productos/budlim.jpg" class="card-img-top budin" alt="budin de limon">
+            <div class="card-body caja">
+                <h5 class="card-title">Budin de limon</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime id, earum magni doloribus a soluta repellendus!</p>
+                </div>
             </div>
-            <div class="coco-productos">
-                <h2 class="titulo-productos">Galletas de coco</h2>
-                <img src="./fotosbk/productos/dulzuras/coco.jpg" alt="galletas coco" class="img-coco-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur doloremque voluptas ratione libero minus!</p>
+            
+            <div class="card trian" style="width: 18rem;">
+            <img src="./fotosbk/productos/triangulitos.jpg" class="card-img-top triangulitos" alt="triangulitos de limon">
+            <div class="card-body caja">
+                <h5 class="card-title">Triangulitos de limon</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia unde doloribus nulla cumque placeat praesentium officia?</p>
+                </div>
             </div>
-            <div class="granola-productos">
-                <h2 class="titulo-productos">Granola</h2>
-                <img src="./fotosbk/productos/dulzuras/granola.jpg" alt="granola" class="img-granola-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ullam facilis dignissimos aut debitis eos!</p>
+            
+            <div class="card gran" style="width: 18rem;">
+            <img src="./fotosbk/productos/granola.jpg" class="card-img-top granola" alt="granola">
+            <div class="card-body caja">
+                <h5 class="card-title">Granola</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ad, sequi incidunt sed necessitatibus eaque vitae.</p>
+                </div>
             </div>
-            <div class="muffins-productos">
-                <h2 class="titulo-productos">Muffins</h2>
-                <img src="./fotosbk/productos/dulzuras/muffins.jpg" alt="muffins" class="img-muffins-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia minus sunt in similique impedit.</p>
             </div>
-            <div class="triangulitos-productos">
-                <h2 class="titulo-productos">triangulitos de limon</h2>
-                <img src="./fotosbk/productos/dulzuras/triangulitos.jpg" alt="triangulitos de limon" class="img-triangulitos-productos">
-                <p class="texto-productos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis et atque quas mollitia culpa perspiciatis.</p>
+
+            <div class="line2">
+                <div class="card choco" style="width: 18rem;">
+                    <img src="./fotosbk/productos/galletas/chocolate.jpg" class="card-img-top chocolate" alt="galletas de chocolate">
+                    <div class="card-body caja">
+                      <h5 class="card-title">Galletas de chocolate</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eum porro debitis quod deserunt repellat nobis?</p>
+                    </div>
+                </div>
+                
+                <div class="card coco" style="width: 18rem;">
+                <img src="./fotosbk/productos/galletas/coco.jpg" class="card-img-top coco" alt="galletas de coco">
+                <div class="card-body caja">
+                    <h5 class="card-title">Galletas de coco</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime id, earum magni doloribus a soluta repellendus!</p>
+                    </div>
+                </div>
+                
+                <div class="card vegan" style="width: 18rem;">
+                <img src="./fotosbk/productos/galletas/veganas.jpg" class="card-img-top veganas" alt="galletas veganas">
+                <div class="card-body caja">
+                    <h5 class="card-title">Galletas veganas</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia unde doloribus nulla cumque placeat praesentium officia?</p>
+                    </div>
+                </div>
+                
+                <div class="card muffins" style="width: 18rem;">
+                <img src="./fotosbk/productos/muffins.jpg" class="card-img-top muffins" alt="muffins">
+                <div class="card-body caja">
+                    <h5 class="card-title">Muffins</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ad, sequi incidunt sed necessitatibus eaque vitae.</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <br>
+        <section class="salados">
+            <div class="titulo-salados">
+                <h1>Salados</h1>
             </div>
-            <div class="veganas-productos">
-                <h2 class="titulo-productos">Galletas veganas</h2>
-                <img src="./fotosbk/productos/dulzuras/veganas.jpg" alt="galletas veganas" class="img-veganas-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quidem a tenetur saepe voluptatem beatae?</p>
+        <br>
+            <div class="line3">
+              <div class="card crack" style="width: 18rem;">
+                <img src="./fotosbk/productos/crackers.jpg" class="card-img-top crackers" alt="crackers">
+                <div class="card-body caja">
+                    <h5 class="card-title">Crackers</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ad, sequi incidunt sed necessitatibus eaque vitae.</p>
+                    </div>
+                </div>
+                <div class="card grisin" style="width: 18rem;">
+                  <img src="./fotosbk/productos/grisines.jpg" class="card-img-top grisines" alt="grisines">
+                  <div class="card-body caja">
+                      <h5 class="card-title">Grisines</h5>
+                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ad, sequi incidunt sed necessitatibus eaque vitae.</p>
+                      </div>
+                  </div>
+                  <div class="card pan" style="width: 18rem;">
+                    <img src="./fotosbk/productos/panpita.jpg" class="card-img-top panpita" alt="pan de pita">
+                    <div class="card-body caja">
+                        <h5 class="card-title">Pan de pita</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ad, sequi incidunt sed necessitatibus eaque vitae.</p>
+                        </div>
+                    </div>
+                    <div class="card galque" style="width: 18rem;">
+                      <img src="./fotosbk/productos/galletas/queso.jpg" class="card-img-top queso" alt="galleta de queso">
+                      <div class="card-body caja">
+                          <h5 class="card-title">Galletas de queso</h5>
+                          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ad, sequi incidunt sed necessitatibus eaque vitae.</p>
+                          </div>
+                      </div>
             </div>
         </section>
-        <section class="salados-productos">
-            <div class="crackers-productos">
-                <h2 class="titulo-productos">Crackers</h2>
-                <img src="./fotosbk/productos/salados/crackers.jpg" alt="crackers" class="img-crackers-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sit atque soluta molestiae voluptas quae.</p>
-            </div>
-            <div class="grisines-productos">
-                <h2 class="titulo-productos">Grisines de queso</h2>
-                <img src="./fotosbk/productos/salados/grisines.jpg" alt="grisines" class="img-grisines-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sit atque soluta molestiae voluptas quae.</p>
-            </div>
-            <div class="queso-productos">
-                <h2 class="titulo-productos">Galletas de queso</h2>
-                <img src="./fotosbk/productos/salados/queso.jpg" alt="galletas de queso" class="img-queso-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sit atque soluta molestiae voluptas quae.</p>
-            </div>
-            <div class="bizco-productos">
-                <h2 class="titulo-productos">Bizcochos de grasa</h2>
-                <img src="./fotosbk/productos/salados/bizco.jpg" alt="bizcochos de grasa" class="img-bizco-productos">
-                <p class="texto-productos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sit atque soluta molestiae voluptas quae.</p>
-            </div>
-        </section>
+      <br>
     </main>
     <footer class="footer">
         <div class="pie">
             <div class="logo-inferior">
-              <img src="./fotosbk/logos/logobk.jpg" alt="logo" class="logo">
+              <img src="./fotosbk/logos/logobk.jpg" alt="logo" class="logo-footer">
             </div>
             <div class="suscripcion">
               <form action="">
@@ -107,7 +166,7 @@
             </div>
             <div class="logos">
             <div class="insta">
-              <a href="instagram.com/beketo.eqs/" id="insta-link"><i class="fa-brands fa-instagram" id="insta-logo"></i></a>
+              <a href="https:instagram.com/beketo.eqs/" id="insta-link"><i class="fa-brands fa-instagram" id="insta-logo"></i></a>
             </div>
             <div class="wpp">
               <a href="#" id="wpp-link"><i class="fa-brands fa-whatsapp" id="wpp-logo"></i></a>
@@ -118,5 +177,8 @@
             <h3 class="pedidos">Pedidos por whatsapp de Lunes a Viernes de 9:00 a 13:00</h3>
           </div>
     </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
