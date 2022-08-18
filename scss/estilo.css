@@ -77,7 +77,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./fotosbk/inicio/gif-bk.gif);
+  background-image: url(../fotosbk/inicio/gif-bk.gif);
   background-position: center;
   background-size: cover;
 }
@@ -86,7 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./fotosbk/inicio/gif-bk.gif) no-repeat;
+    background-image: url(../fotosbk/inicio/gif-bk.gif) no-repeat;
     background-position: center;
     background-size: cover;
 
@@ -94,7 +94,7 @@
 }
 .inicio .main-inicio .dulzuras-inicio {
   grid-area: dulzuras;
-  background-image: url(./fotosbk/inicio/alfajores-fondo.jpg);
+  background-image: url(../fotosbk/inicio/alfajores-fondo.jpg);
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -115,7 +115,7 @@
 }
 .inicio .main-inicio .salados-inicio {
   grid-area: salados;
-  background-image: url(./fotosbk/inicio/grisines-fondo.jpg);
+  background-image: url(../fotosbk/inicio/grisines-fondo.jpg);
   background-position: center;
   display: flex;
   flex-direction: column;
