@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/fbbac18cfd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./scss/estilo.css">
     <title>incio</title>
 </head>
 <body class="body inicio">
@@ -17,12 +17,12 @@
         <nav class="navbar navbar-expand-lg">
         <div class="container-fluid contenedor">
             <div class="logotipo">
-              <a class="navbar-brand" href="#"><img src="./fotosbk/logos/logobk.jpg" alt="logo" width="80px" class="logo"></a>
+              <a class="navbar-brand link-logo" href="#"><img src="./fotosbk/logos/logobk.jpg" alt="logo" width="80px" class="logo"></a>
             </div>
-              <button class="navbar-toggler icono-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon icono-menu"></span>
-              </button>
-              <div class="collapse navbar-collapse menu" id="navbarNav">
+            <button class="navbar-toggler icono-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu" id="navbarNav">
                 <ul class="navbar-nav lista-menu">
                   <li class="nav-item">
                     <a class="nav-link" href="#">Inicio</a>
@@ -50,13 +50,13 @@
           <img src="./fotosbk/inicio/grisines.jpg" alt="grisines" class="grisines-inicio">
         </section>
     </main>
-    <footer class="footer-inicio">
+    <footer class="footer">
         <div class="pie">
             <div class="logo-inferior">
               <img src="./fotosbk/logos/logobk.jpg" alt="logo" class="logo-footer">
             </div>
             <div class="suscripcion">
-              <form action="">
+              <form action="" class="formulario">
                 <h2 class="suscribite">Suscribite!</h2>
                 <input type="email" placeholder="E-mail" class="email">
                 <button type="submit" class="enviar"><i class="fa-solid fa-paper-plane" id="avion"></i></button>

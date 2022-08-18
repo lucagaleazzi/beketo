@@ -1,0 +1,214 @@
+/*variabes*/
+$fuente:"Quicksand", sans-serif;
+$gris:#35363a;
+$bordes:solid 2px white;
+$radius10:10%;
+$radius3:3px;
+/*ajustes generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente;
+}
+/*body 3 secciones*/
+.body{
+    margin: 0;
+    width: 100%;
+}
+/*body inicio*/
+.inicio{
+    height: 160vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto 120px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    /*header*/
+    .header{
+        grid-area: header;
+        .navbar{
+            background-color: black;
+            .contenedor{
+                .logotipo{
+                    .link-logo{
+                        .logo{
+                            border-radius: $radius10;
+                        }
+                    }   
+                }
+                .icono-menu{
+                    background-color: $gris;
+                }
+                .menu{
+                    justify-content: end;
+                    .lista-menu{
+                        text-align: center;
+                        .nav-item{
+                            .nav-link{
+                                color: white;
+                                font-size: 20px;
+                                text-transform: uppercase;
+                                margin: 10px;
+                                border-radius: $radius3;
+                                &:hover{
+                                    color: white;
+                                    background-color: $gris;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .main-inicio{
+        grid-area: main;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1.4fr 1fr;
+        grid-template-areas: 
+        "presentacion presentacion"
+        "dulzuras salados"
+        ;
+        .presentacion-inicio{
+            grid-area: presentacion;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image:url(/fotosbk/inicio/gif-bk.gif);
+            background-position: center;
+            background-size:cover;     
+        }
+        .dulzuras-inicio{
+            grid-area: dulzuras;
+            background-image: url(/fotosbk/inicio/alfajores-fondo.jpg);
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: $bordes;
+            .alfajores-inicio{
+                width: 250px;
+                border-radius: $radius10;
+                border: $bordes;
+            }
+        }
+        .salados-inicio{
+            grid-area: salados;
+            background-image: url(/fotosbk/inicio/grisines-fondo.jpg);
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: $bordes;
+            .grisines-inicio{
+                width: 250px;
+                border-radius: $radius10;
+                border: $bordes;
+            }
+        }
+    }
+    /*footer*/
+    .footer{
+        grid-area: footer;
+        height: 120px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        .pie{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: white;
+            .logo-inferior{
+                margin: auto 10px;
+                .logo-footer{
+                    width: 80px;
+                    border-radius: $radius10;
+                }
+            }
+            .suscripcion{
+                .formulario{
+                    .suscribite{
+                        color: white;
+                        cursor: default;
+                        text-align: center;
+                    }
+                    .email{
+                        border: none;
+                        border-radius: 5px;
+                        background-color: $gris;
+                        padding: 5px 5px;
+                        color: white;
+                    }
+                    .enviar{
+                        border: none;
+                        border-radius: 5px;
+                        padding: 5px 5px;
+                        cursor: pointer;
+                        #avion{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .logos{
+                display: flex;
+                margin-right: 50px;
+                .insta{
+                    background-color: $gris;
+                    padding: 8px 12px;
+                    border-radius: $radius10*5;
+                    &:hover{
+                        background-color: #f34d59;
+                        transition: .3s;
+                    }
+                    #insta-link{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+                .wpp{
+                    background-color: $gris;
+                    padding: 8px 12px;
+                    border-radius: $radius10*5;
+                    margin-left: 10px;
+                   
+                    &:hover{
+                        background-color: #2eb843;
+                        transition: .3s;
+                    }
+                    #wpp-link{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .sub-pie{
+            display: flex;
+            justify-content: center;
+            height: 20px;
+            background-color: $gris;
+            color: white;
+            .pedidos{
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}

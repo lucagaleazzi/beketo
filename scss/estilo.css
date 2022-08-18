@@ -1,0 +1,271 @@
+/*variabes*/
+/*ajustes generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+/*body 3 secciones*/
+.body {
+  margin: 0;
+  width: 100%;
+}
+
+/*body inicio*/
+.inicio {
+  height: 160vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px auto 120px;
+  grid-template-areas: "header" "main" "footer";
+  /*header*/
+  /*footer*/
+}
+.inicio .header {
+  grid-area: header;
+}
+.inicio .header .navbar {
+  background-color: black;
+}
+.inicio .header .navbar .contenedor .logotipo .link-logo .logo {
+  border-radius: 10%;
+}
+.inicio .header .navbar .contenedor .icono-menu {
+  background-color: #35363a;
+}
+.inicio .header .navbar .contenedor .menu {
+  justify-content: end;
+}
+.inicio .header .navbar .contenedor .menu .lista-menu {
+  text-align: center;
+}
+.inicio .header .navbar .contenedor .menu .lista-menu .nav-item .nav-link {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px;
+  border-radius: 3px;
+}
+.inicio .header .navbar .contenedor .menu .lista-menu .nav-item .nav-link:hover {
+  color: white;
+  background-color: #35363a;
+  transition: 0.3s;
+}
+.inicio .main-inicio {
+  grid-area: main;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1.4fr 1fr;
+  grid-template-areas: "presentacion presentacion" "dulzuras salados";
+}
+@media (max-width:912px){
+  .inicio .main-inicio{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "presentacion"
+    "dulzuras"
+    "salados"
+    ;
+  }
+}
+.inicio .main-inicio .presentacion-inicio {
+  grid-area: presentacion;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/fotosbk/inicio/gif-bk.gif);
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width:912px){
+  .inicio .main-inicio .presentacion-inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/fotosbk/inicio/gif-bk.gif) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+}
+.inicio .main-inicio .dulzuras-inicio {
+  grid-area: dulzuras;
+  background-image: url(/fotosbk/inicio/alfajores-fondo.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: solid 2px white;
+}
+.inicio .main-inicio .dulzuras-inicio .alfajores-inicio {
+  width: 250px;
+  border-radius: 10%;
+  border: solid 2px white;
+}
+@media (max-width:912px){
+  .inicio .main-inicio .dulzuras-inicio .alfajores-inicio{
+    width: 200px;
+  }
+}
+.inicio .main-inicio .salados-inicio {
+  grid-area: salados;
+  background-image: url(/fotosbk/inicio/grisines-fondo.jpg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: solid 2px white;
+}
+.inicio .main-inicio .salados-inicio .grisines-inicio {
+  width: 250px;
+  border-radius: 10%;
+  border: solid 2px white;
+}
+@media (max-width:912px){
+  .inicio .main-inicio .salados-inicio .grisines-inicio{
+    width: 200px;
+  }
+}
+.inicio .footer {
+  grid-area: footer;
+  height: 120px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inicio .footer .pie {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+}
+.inicio .footer .pie .logo-inferior {
+  margin: auto 10px;
+}
+.inicio .footer .pie .logo-inferior .logo-footer {
+  width: 80px;
+  border-radius: 10%;
+}
+.inicio .footer .pie .suscripcion .formulario .suscribite {
+  color: white;
+  cursor: default;
+  text-align: center;
+}
+.inicio .footer .pie .suscripcion .formulario .email {
+  border: none;
+  border-radius: 5px;
+  background-color: #35363a;
+  padding: 5px 5px;
+  color: white;
+}
+.inicio .footer .pie .suscripcion .formulario .enviar {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.inicio .footer .pie .suscripcion .formulario .enviar #avion {
+  font-size: 14px;
+}
+.inicio .footer .pie .logos {
+  display: flex;
+  margin-right: 50px;
+}
+.inicio .footer .pie .logos .insta {
+  background-color: #35363a;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+.inicio .footer .pie .logos .insta:hover {
+  background-color: #f34d59;
+  transition: 0.3s;
+}
+.inicio .footer .pie .logos .insta #insta-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.inicio .footer .pie .logos .wpp {
+  background-color: #35363a;
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.inicio .footer .pie .logos .wpp:hover {
+  background-color: #2eb843;
+  transition: 0.3s;
+}
+.inicio .footer .pie .logos .wpp #wpp-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.inicio .footer .sub-pie {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  background-color: #35363a;
+  color: white;
+}
+.inicio .footer .sub-pie .pedidos {
+  font-size: 1rem;
+  text-align: center;
+}
+@media (max-width:768px){
+  .inicio .footer{
+    grid-area: footer;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .inicio .footer .pie{
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .inicio .footer .pie .logo-inferior{
+    margin:auto;
+  }
+  .inicio .footer .pie .logo-inferior .logo-footer{
+    width: 60px;
+    border-radius: 10%;
+  }  
+  .inicio .footer .pie .logos{
+    display: flex;
+    margin-right: 0;
+    margin: auto;
+  }
+  .inicio .footer .pie .logos .insta{
+    margin: auto 5px;
+  }
+  .inicio .footer .pie .logos .wpp{
+    margin-left: 0;
+    margin: auto 5px;
+  }
+  .inicio .footer .sub-pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #35363a;
+    color: white;
+  }
+  .inici .footer .sub-pie .pedidos{
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
