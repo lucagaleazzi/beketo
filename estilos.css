@@ -298,6 +298,11 @@
     grid-area: main;
     z-index: -1;
 }
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .dulces{
     display:flex;
     flex-direction: column;
@@ -511,24 +516,47 @@
         ;
     }
     .main-recetas{
+        grid-area: main;
         width: 100%;
         display: flex;
+        flex-direction: column;
     }
     .receta-1{
-        border-right: solid 1px white;
-        width: 50%;
+        width: 100%;
         height: 50%;
-        background-image: linear-gradient(#35363a, black);
+        background-image: linear-gradient(black
+        , #35363a, black);
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 2fr;
         grid-template-areas: 
-        "titulo-pan"
-        "imagen-pan"
-        "receta-pan"
+        "titulo-pan titulo-pan"
+        "imagen-pan receta-pan"
         ;
         justify-content: center;
         align-items: center;
+    }
+    @media (max-width:912px){
+        .receta-1{
+            width: 100%;
+            height: 50%;
+            background-image: linear-gradient(black
+            , #35363a, black);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 2fr 2fr;
+            grid-template-areas: 
+            "titulo-pan"
+            "imagen-pan"
+            "receta-pan"
+            ;
+            justify-content: center;
+            align-items: center;
+        }
+        .receta-pan{
+            display: flex;
+            justify-content: center;
+        }
     }
     .titulo-receta{
         text-align: center;
@@ -558,20 +586,40 @@
         color: white;
     }
     .receta-2{
-        border-left: solid 1px white;
-        width: 50%;
+        width: 100%;
         height:auto;
-        background-image: linear-gradient(#35363a, black);
+        background-image: linear-gradient(black, #35363a, black);
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
         grid-template-areas: 
-        "titulo-mix"
-        "imagen-mix"
-        "receta-mix"
+        "titulo-mix titulo-mix"
+        "imagen-mix receta-mix"
         ;
         justify-content: center;
         align-items: center;
+    }
+    @media (max-width:912px){
+        .receta-2{
+            width: 100%;
+            height: 50%;
+            background-image: linear-gradient(black
+            , #35363a, black);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 2fr 2fr;
+            grid-template-areas: 
+            "titulo-mix"
+            "imagen-mix"
+            "receta-mix"
+            ;
+            justify-content: center;
+            align-items: center;
+        }
+        .receta-mix{
+            display: flex;
+            justify-content: center;
+        }
     }
     .titulo-receta-mix{
         text-align: center;
