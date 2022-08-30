@@ -23,6 +23,12 @@
   /*header*/
   /*footer*/
 }
+@media (max-width: 768px) {
+  .inicio {
+    height: 200vh;
+    grid-template-rows: 90px auto 300px;
+  }
+}
 .inicio .header {
   grid-area: header;
 }
@@ -30,6 +36,7 @@
   background-color: black;
 }
 .inicio .header .navbar .contenedor .logotipo .link-logo .logo {
+  width: 80px;
   border-radius: 10%;
 }
 .inicio .header .navbar .contenedor .icono-menu {
@@ -61,15 +68,11 @@
   grid-template-rows: 1.4fr 1fr;
   grid-template-areas: "presentacion presentacion" "dulzuras salados";
 }
-@media (max-width:912px){
-  .inicio .main-inicio{
+@media (max-width: 768px) {
+  .inicio .main-inicio {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas: 
-    "presentacion"
-    "dulzuras"
-    "salados"
-    ;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "presentacion" "dulzuras" "salados";
   }
 }
 .inicio .main-inicio .presentacion-inicio {
@@ -77,24 +80,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../fotosbk/inicio/gif-bk.gif);
+  background-image: url(/fotosbk/inicio/gif-bk.gif);
   background-position: center;
   background-size: cover;
 }
-@media (max-width:912px){
-  .inicio .main-inicio .presentacion-inicio{
+@media (max-width: 480px) {
+  .inicio .main-inicio .presentacion-inicio {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../fotosbk/inicio/gif-bk.gif) no-repeat;
+    background-image: url(./fotosbk/inicio/gif-bk.gif) no-repeat;
     background-position: center;
-    background-size: cover;
-
+    background-size: contain;
   }
 }
 .inicio .main-inicio .dulzuras-inicio {
   grid-area: dulzuras;
-  background-image: url(../fotosbk/inicio/alfajores-fondo.jpg);
+  background-image: url(/fotosbk/inicio/alfajores-fondo.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -105,18 +107,18 @@
   border: solid 2px white;
 }
 .inicio .main-inicio .dulzuras-inicio .alfajores-inicio {
-  width: 200px;
+  width: 250px;
   border-radius: 10%;
   border: solid 2px white;
 }
-@media (max-width:912px){
-  .inicio .main-inicio .dulzuras-inicio .alfajores-inicio{
-    width: 150px;
+@media (max-width: 768px) {
+  .inicio .main-inicio .dulzuras-inicio .alfajores-inicio {
+    width: 200px;
   }
 }
 .inicio .main-inicio .salados-inicio {
   grid-area: salados;
-  background-image: url(../fotosbk/inicio/grisines-fondo.jpg);
+  background-image: url(/fotosbk/inicio/grisines-fondo.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -127,13 +129,13 @@
   border: solid 2px white;
 }
 .inicio .main-inicio .salados-inicio .grisines-inicio {
-  width: 200px;
+  width: 250px;
   border-radius: 10%;
   border: solid 2px white;
 }
-@media (max-width:912px){
-  .inicio .main-inicio .salados-inicio .grisines-inicio{
-    width: 150px;
+@media (max-width: 768px) {
+  .inicio .main-inicio .salados-inicio .grisines-inicio {
+    width: 200px;
   }
 }
 .inicio .footer {
@@ -143,6 +145,15 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .inicio .footer {
+    grid-area: footer;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .inicio .footer .pie {
   height: 100px;
   display: flex;
@@ -151,12 +162,32 @@
   background-color: #000;
   color: white;
 }
+@media (max-width: 768px) {
+  .inicio .footer .pie {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .inicio .footer .pie .logo-inferior {
   margin: auto 10px;
+}
+@media (max-width: 768px) {
+  .inicio .footer .pie .logo-inferior {
+    margin: auto;
+  }
 }
 .inicio .footer .pie .logo-inferior .logo-footer {
   width: 80px;
   border-radius: 10%;
+}
+@media (max-width: 768px) {
+  .inicio .footer .pie .logo-inferior .logo-footer {
+    width: 60px;
+    border-radius: 10%;
+  }
 }
 .inicio .footer .pie .suscripcion .formulario .suscribite {
   color: white;
@@ -183,6 +214,13 @@
   display: flex;
   margin-right: 50px;
 }
+@media (max-width: 768px) {
+  .inicio .footer .pie .logos {
+    display: flex;
+    margin-right: 0;
+    margin: auto;
+  }
+}
 .inicio .footer .pie .logos .insta {
   background-color: #35363a;
   padding: 8px 12px;
@@ -191,6 +229,11 @@
 .inicio .footer .pie .logos .insta:hover {
   background-color: #f34d59;
   transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .inicio .footer .pie .logos .insta {
+    margin: auto 5px;
+  }
 }
 .inicio .footer .pie .logos .insta #insta-link {
   text-decoration: none;
@@ -207,6 +250,12 @@
   background-color: #2eb843;
   transition: 0.3s;
 }
+@media (max-width: 768px) {
+  .inicio .footer .pie .logos .wpp {
+    margin-left: 0;
+    margin: auto 5px;
+  }
+}
 .inicio .footer .pie .logos .wpp #wpp-link {
   text-decoration: none;
   color: white;
@@ -219,45 +268,8 @@
   background-color: #35363a;
   color: white;
 }
-.inicio .footer .sub-pie .pedidos {
-  font-size: 1rem;
-  text-align: center;
-}
-@media (max-width:768px){
-  .inicio .footer{
-    grid-area: footer;
-    height: 300px;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .inicio .footer .pie{
-    height: 260px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .inicio .footer .pie .logo-inferior{
-    margin:auto;
-  }
-  .inicio .footer .pie .logo-inferior .logo-footer{
-    width: 60px;
-    border-radius: 10%;
-  }  
-  .inicio .footer .pie .logos{
-    display: flex;
-    margin-right: 0;
-    margin: auto;
-  }
-  .inicio .footer .pie .logos .insta{
-    margin: auto 5px;
-  }
-  .inicio .footer .pie .logos .wpp{
-    margin-left: 0;
-    margin: auto 5px;
-  }
-  .inicio .footer .sub-pie{
+@media (max-width: 768px) {
+  .inicio .footer .sub-pie {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,9 +277,701 @@
     background-color: #35363a;
     color: white;
   }
-  .inici .footer .sub-pie .pedidos{
+}
+.inicio .footer .sub-pie .pedidos {
+  font-size: 1rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .inicio .footer .sub-pie .pedidos {
     font-size: 1rem;
     text-align: center;
   }
 }
-/*# sourceMappingURL=estilo.css.map */
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px auto 120px;
+  grid-template-areas: "header" "main" "footer";
+  /*insertar footer*/
+}
+.productos .header {
+  grid-area: header;
+}
+.productos .header .navbar {
+  background-color: black;
+}
+.productos .header .navbar .contenedor .logotipo .link-logo .logo {
+  border-radius: 10%;
+}
+.productos .header .navbar .contenedor .icono-menu {
+  background-color: #35363a;
+}
+.productos .header .navbar .contenedor .menu {
+  justify-content: end;
+}
+.productos .header .navbar .contenedor .menu .lista-menu {
+  text-align: center;
+}
+.productos .header .navbar .contenedor .menu .lista-menu .nav-item .nav-link {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px;
+  border-radius: 3px;
+}
+.productos .header .navbar .contenedor .menu .lista-menu .nav-item .nav-link:hover {
+  color: white;
+  background-color: #35363a;
+  transition: 0.3s;
+}
+.productos .main-productos {
+  background-color: #35363a;
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+  z-index: -1;
+}
+.productos .main-productos .dulces {
+  display: flex;
+  flex-direction: column;
+}
+.productos .main-productos .dulces .titulo .dulzuras-titulo {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.productos .main-productos .dulces .line1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+@media (max-width: 912px) {
+  .productos .main-productos .dulces .line1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    grid-template-areas: "alfajores budin" "triangulitos granola";
+    gap: auto;
+    justify-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .productos .main-productos .dulces .line1 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    grid-template-areas: "alfajores" "budin" "triangulitos" "granola";
+    gap: auto;
+    justify-items: center;
+  }
+}
+.productos .main-productos .dulces .line1 .alfa {
+  grid-area: alfajores;
+}
+.productos .main-productos .dulces .line1 .alfa .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .dulces .line1 .budlim {
+  grid-area: budin;
+}
+.productos .main-productos .dulces .line1 .budlim .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .dulces .line1 .trian {
+  grid-area: triangulitos;
+}
+.productos .main-productos .dulces .line1 .trian .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .dulces .line1 .gran {
+  grid-area: granola;
+}
+.productos .main-productos .dulces .line1 .gran .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .dulces .line2 {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+@media (max-width: 912px) {
+  .productos .main-productos .dulces .line2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    grid-template-areas: "choco coco" "vegan muffins";
+    gap: auto;
+    justify-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .productos .main-productos .dulces .line2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    grid-template-areas: "choco" "coco" "vegan" "muffins";
+    gap: auto;
+    justify-items: center;
+  }
+}
+.productos .main-productos .dulces .line2 .choco {
+  grid-area: choco;
+}
+.productos .main-productos .dulces .line2 .choco .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .dulces .line2 .coco {
+  grid-area: coco;
+}
+.productos .main-productos .dulces .line2 .coco .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .dulces .line2 .vegan {
+  grid-area: vegan;
+}
+.productos .main-productos .dulces .line2 .vegan .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .dulces .line2 .muffins {
+  grid-area: muffins;
+}
+.productos .main-productos .dulces .line2 .muffins .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .salados .titulo-salados {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.productos .main-productos .salados .line3 {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+@media (max-width: 912px) {
+  .productos .main-productos .salados .line3 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    grid-template-areas: "crackers grisines" "panes queso";
+    gap: auto;
+    justify-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .productos .main-productos .salados .line3 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+    grid-template-areas: "crackers" "grisines" "panes" "queso";
+    gap: auto;
+    justify-items: center;
+  }
+}
+.productos .main-productos .salados .line3 .crack {
+  grid-area: crackers;
+}
+.productos .main-productos .salados .line3 .crack .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .salados .line3 .grisin {
+  grid-area: grisines;
+}
+.productos .main-productos .salados .line3 .grisin .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .salados .line3 .pan {
+  grid-area: panes;
+}
+.productos .main-productos .salados .line3 .pan .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .main-productos .salados .line3 .galque {
+  grid-area: queso;
+}
+.productos .main-productos .salados .line3 .galque .card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.productos .footer {
+  grid-area: footer;
+  height: 120px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .productos .footer {
+    grid-area: footer;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.productos .footer .pie {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+}
+@media (max-width: 768px) {
+  .productos .footer .pie {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.productos .footer .pie .logo-inferior {
+  margin: auto 10px;
+}
+@media (max-width: 768px) {
+  .productos .footer .pie .logo-inferior {
+    margin: auto;
+  }
+}
+.productos .footer .pie .logo-inferior .logo-footer {
+  width: 80px;
+  border-radius: 10%;
+}
+@media (max-width: 768px) {
+  .productos .footer .pie .logo-inferior .logo-footer {
+    width: 60px;
+    border-radius: 10%;
+  }
+}
+.productos .footer .pie .suscripcion .formulario .suscribite {
+  color: white;
+  cursor: default;
+  text-align: center;
+}
+.productos .footer .pie .suscripcion .formulario .email {
+  border: none;
+  border-radius: 5px;
+  background-color: #35363a;
+  padding: 5px 5px;
+  color: white;
+}
+.productos .footer .pie .suscripcion .formulario .enviar {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.productos .footer .pie .suscripcion .formulario .enviar #avion {
+  font-size: 14px;
+}
+.productos .footer .pie .logos {
+  display: flex;
+  margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .productos .footer .pie .logos {
+    display: flex;
+    margin-right: 0;
+    margin: auto;
+  }
+}
+.productos .footer .pie .logos .insta {
+  background-color: #35363a;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+.productos .footer .pie .logos .insta:hover {
+  background-color: #f34d59;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .productos .footer .pie .logos .insta {
+    margin: auto 5px;
+  }
+}
+.productos .footer .pie .logos .insta #insta-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.productos .footer .pie .logos .wpp {
+  background-color: #35363a;
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.productos .footer .pie .logos .wpp:hover {
+  background-color: #2eb843;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .productos .footer .pie .logos .wpp {
+    margin-left: 0;
+    margin: auto 5px;
+  }
+}
+.productos .footer .pie .logos .wpp #wpp-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.productos .footer .sub-pie {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  background-color: #35363a;
+  color: white;
+}
+@media (max-width: 768px) {
+  .productos .footer .sub-pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #35363a;
+    color: white;
+  }
+}
+.productos .footer .sub-pie .pedidos {
+  font-size: 1rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .productos .footer .sub-pie .pedidos {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.recetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px auto 120px;
+  grid-template-areas: "header" "main" "footer";
+  /*footer*/
+}
+.recetas .header {
+  grid-area: header;
+}
+.recetas .header .navbar {
+  background-color: black;
+}
+.recetas .header .navbar .contenedor .logotipo .link-logo .logo {
+  border-radius: 10%;
+}
+.recetas .header .navbar .contenedor .icono-menu {
+  background-color: #35363a;
+}
+.recetas .header .navbar .contenedor .menu {
+  justify-content: end;
+}
+.recetas .header .navbar .contenedor .menu .lista-menu {
+  text-align: center;
+}
+.recetas .header .navbar .contenedor .menu .lista-menu .nav-item .nav-link {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px;
+  border-radius: 3px;
+}
+.recetas .header .navbar .contenedor .menu .lista-menu .nav-item .nav-link:hover {
+  color: white;
+  background-color: #35363a;
+  transition: 0.3s;
+}
+.recetas .main-recetas {
+  grid-area: main;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.recetas .main-recetas .receta-1 {
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(black, #35363a, black);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr;
+  grid-template-areas: "titulo-pan titulo-pan" "imagen-pan receta-pan";
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 912px) {
+  .recetas .main-recetas .receta-1 {
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(black, #35363a, black);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-areas: "titulo-pan" "imagen-pan" "receta-pan";
+    justify-content: center;
+    align-items: center;
+  }
+}
+.recetas .main-recetas .receta-1 .titulo-receta {
+  text-align: center;
+  grid-area: titulo-pan;
+}
+.recetas .main-recetas .receta-1 .titulo-receta .titulo-pan {
+  color: white;
+  text-transform: uppercase;
+}
+.recetas .main-recetas .receta-1 .img-receta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: imagen-pan;
+}
+.recetas .main-recetas .receta-1 .img-receta .imagen-pan {
+  width: 300px;
+  border-radius: 10%;
+  border: solid 2px white;
+}
+.recetas .main-recetas .receta-1 .texto-receta {
+  text-transform: uppercase;
+  padding: 10px;
+  grid-area: receta-pan;
+}
+.recetas .main-recetas .receta-1 .texto-receta .receta-pan {
+  color: white;
+}
+@media (max-width: 912px) {
+  .recetas .main-recetas .receta-1 .texto-receta .receta-pan {
+    display: flex;
+    justify-content: center;
+  }
+}
+.recetas .main-recetas .receta-2 {
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(black, #35363a, black);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr;
+  grid-template-areas: "titulo-mix titulo-mix" "imagen-mix receta-mix";
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 912px) {
+  .recetas .main-recetas .receta-2 {
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(black, #35363a, black);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-areas: "titulo-mix" "imagen-mix" "receta-mix";
+    justify-content: center;
+    align-items: center;
+  }
+}
+.recetas .main-recetas .receta-2 .titulo-receta-mix {
+  text-align: center;
+  grid-area: titulo-mix;
+}
+.recetas .main-recetas .receta-2 .titulo-receta-mix .titulo-mix {
+  color: white;
+  text-transform: uppercase;
+}
+.recetas .main-recetas .receta-2 .img-receta-mix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: imagen-mix;
+}
+.recetas .main-recetas .receta-2 .img-receta-mix .imagen-mix {
+  width: 300px;
+  border-radius: 10%;
+  border: solid 2px white;
+}
+.recetas .main-recetas .receta-2 .texto-receta-mix {
+  text-transform: uppercase;
+  padding: 10px;
+  grid-area: receta-mix;
+}
+.recetas .main-recetas .receta-2 .texto-receta-mix .receta-mix {
+  color: white;
+}
+@media (max-width: 912px) {
+  .recetas .main-recetas .receta-2 .texto-receta-mix .receta-mix {
+    grid-area: titulo-mix;
+  }
+}
+.recetas .footer {
+  grid-area: footer;
+  height: 120px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .recetas .footer {
+    grid-area: footer;
+    height: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.recetas .footer .pie {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+}
+@media (max-width: 768px) {
+  .recetas .footer .pie {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.recetas .footer .pie .logo-inferior {
+  margin: auto 10px;
+}
+@media (max-width: 768px) {
+  .recetas .footer .pie .logo-inferior {
+    margin: auto;
+  }
+}
+.recetas .footer .pie .logo-inferior .logo-footer {
+  width: 80px;
+  border-radius: 10%;
+}
+@media (max-width: 768px) {
+  .recetas .footer .pie .logo-inferior .logo-footer {
+    width: 60px;
+    border-radius: 10%;
+  }
+}
+.recetas .footer .pie .suscripcion .formulario .suscribite {
+  color: white;
+  cursor: default;
+  text-align: center;
+}
+.recetas .footer .pie .suscripcion .formulario .email {
+  border: none;
+  border-radius: 5px;
+  background-color: #35363a;
+  padding: 5px 5px;
+  color: white;
+}
+.recetas .footer .pie .suscripcion .formulario .enviar {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.recetas .footer .pie .suscripcion .formulario .enviar #avion {
+  font-size: 14px;
+}
+.recetas .footer .pie .logos {
+  display: flex;
+  margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .recetas .footer .pie .logos {
+    display: flex;
+    margin-right: 0;
+    margin: auto;
+  }
+}
+.recetas .footer .pie .logos .insta {
+  background-color: #35363a;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+.recetas .footer .pie .logos .insta:hover {
+  background-color: #f34d59;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .recetas .footer .pie .logos .insta {
+    margin: auto 5px;
+  }
+}
+.recetas .footer .pie .logos .insta #insta-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.recetas .footer .pie .logos .wpp {
+  background-color: #35363a;
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.recetas .footer .pie .logos .wpp:hover {
+  background-color: #2eb843;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .recetas .footer .pie .logos .wpp {
+    margin-left: 0;
+    margin: auto 5px;
+  }
+}
+.recetas .footer .pie .logos .wpp #wpp-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.recetas .footer .sub-pie {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  background-color: #35363a;
+  color: white;
+}
+@media (max-width: 768px) {
+  .recetas .footer .sub-pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #35363a;
+    color: white;
+  }
+}
+.recetas .footer .sub-pie .pedidos {
+  font-size: 1rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .recetas .footer .sub-pie .pedidos {
+    font-size: 1rem;
+    text-align: center;
+  }
+}/*# sourceMappingURL=estilo.css.map */
