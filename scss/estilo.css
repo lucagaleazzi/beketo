@@ -1,4 +1,5 @@
 /*variabes*/
+/*mixins*/
 /*ajustes generales*/
 * {
   margin: 0;
@@ -36,8 +37,8 @@
   background-color: black;
 }
 .inicio .header .navbar .contenedor .logotipo .link-logo .logo {
-  width: 80px;
   border-radius: 10%;
+  width: 80px;
 }
 .inicio .header .navbar .contenedor .icono-menu {
   background-color: #35363a;
@@ -180,8 +181,8 @@
   }
 }
 .inicio .footer .pie .logo-inferior .logo-footer {
-  width: 80px;
   border-radius: 10%;
+  width: 80px;
 }
 @media (max-width: 768px) {
   .inicio .footer .pie .logo-inferior .logo-footer {
@@ -304,6 +305,7 @@
 }
 .productos .header .navbar .contenedor .logotipo .link-logo .logo {
   border-radius: 10%;
+  width: 80px;
 }
 .productos .header .navbar .contenedor .icono-menu {
   background-color: #35363a;
@@ -560,8 +562,8 @@
   }
 }
 .productos .footer .pie .logo-inferior .logo-footer {
-  width: 80px;
   border-radius: 10%;
+  width: 80px;
 }
 @media (max-width: 768px) {
   .productos .footer .pie .logo-inferior .logo-footer {
@@ -684,6 +686,7 @@
 }
 .recetas .header .navbar .contenedor .logotipo .link-logo .logo {
   border-radius: 10%;
+  width: 80px;
 }
 .recetas .header .navbar .contenedor .icono-menu {
   background-color: #35363a;
@@ -867,8 +870,8 @@
   }
 }
 .recetas .footer .pie .logo-inferior .logo-footer {
-  width: 80px;
   border-radius: 10%;
+  width: 80px;
 }
 @media (max-width: 768px) {
   .recetas .footer .pie .logo-inferior .logo-footer {

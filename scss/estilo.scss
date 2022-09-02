@@ -4,6 +4,12 @@ $gris:#35363a;
 $bordes:solid 2px white;
 $radius10:10%;
 $radius3:3px;
+
+/*mixins*/
+@mixin logo-beketo {
+    border-radius: 10%;
+    width: 80px;
+}
 /*ajustes generales*/
 *{
     margin: 0;
@@ -40,8 +46,7 @@ $radius3:3px;
                 .logotipo{
                     .link-logo{
                         .logo{
-                            width: 80px;
-                            border-radius: 10%;
+                            @include logo-beketo
                         }
                     }   
                 }
@@ -182,12 +187,11 @@ $radius3:3px;
                     margin: auto;
                 }
                 .logo-footer{
-                    width: 80px;
-                    border-radius: $radius10;
                     @media (max-width:768px){
                         width: 60px;
                         border-radius: $radius10;
                     }
+                    @include logo-beketo
                 }
             }
             .suscripcion{
@@ -304,8 +308,8 @@ $radius3:3px;
             .contenedor{
                 .logotipo{
                     .link-logo{
-                        .logo{
-                            border-radius: $radius10;
+                        .logo{                
+                            @include logo-beketo
                         }
                     }   
                 }
@@ -578,12 +582,11 @@ $radius3:3px;
                     margin: auto;
                 }
                 .logo-footer{
-                    width: 80px;
-                    border-radius: $radius10;
                     @media (max-width:768px){
                         width: 60px;
                         border-radius: $radius10;
                     }
+                    @include logo-beketo
                 }
             }
             .suscripcion{
@@ -700,7 +703,7 @@ $radius3:3px;
                 .logotipo{
                     .link-logo{
                         .logo{
-                            border-radius: $radius10;
+                            @include logo-beketo
                         }
                     }   
                 }
@@ -893,12 +896,11 @@ $radius3:3px;
                     margin: auto;
                 }
                 .logo-footer{
-                    width: 80px;
-                    border-radius: $radius10;
                     @media (max-width:768px){
                         width: 60px;
                         border-radius: $radius10;
                     }
+                    @include logo-beketo
                 }
             }
             .suscripcion{
