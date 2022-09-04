@@ -1,0 +1,39 @@
+.header{
+    grid-area: header;
+    .navbar{
+        background-color: black;
+        .contenedor{
+            .logotipo{
+                .link-logo{
+                    .logo{
+                        @include logo-beketo
+                    }
+                }   
+            }
+            .icono-menu{
+                background-color: $gris;
+            }
+            .menu{
+                justify-content: end;
+                .lista-menu{
+                    text-align: center;
+                    .nav-item{
+                        .nav-link{
+                            color: white;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            margin: 10px;
+                            border-radius: $radius3;
+                            &:hover{
+                                color: white;
+                                background-color:$gris;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}

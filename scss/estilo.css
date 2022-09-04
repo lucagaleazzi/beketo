@@ -1,5 +1,3 @@
-/*variabes*/
-/*mixins*/
 /*ajustes generales*/
 * {
   margin: 0;
@@ -16,17 +14,18 @@
 
 /*body inicio*/
 .inicio {
-  height: 160vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 90px auto 120px;
   grid-template-areas: "header" "main" "footer";
+  height: 180vh;
   /*header*/
+  /*inicio*/
   /*footer*/
 }
 @media (max-width: 768px) {
   .inicio {
-    height: 200vh;
+    height: 240vh;
     grid-template-rows: 90px auto 300px;
   }
 }
@@ -53,6 +52,7 @@
   color: white;
   font-size: 20px;
   text-transform: uppercase;
+  text-decoration: none;
   margin: 10px;
   border-radius: 3px;
 }
@@ -295,7 +295,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: 90px auto 120px;
   grid-template-areas: "header" "main" "footer";
-  /*insertar footer*/
+  /*header*/
+  /*productos*/
+  /*footer*/
 }
 .productos .header {
   grid-area: header;
@@ -320,6 +322,7 @@
   color: white;
   font-size: 20px;
   text-transform: uppercase;
+  text-decoration: none;
   margin: 10px;
   border-radius: 3px;
 }
@@ -356,9 +359,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
-    grid-template-areas: "alfajores budin" "triangulitos granola";
     gap: auto;
     justify-items: center;
+    grid-template-areas: "alfajores budin" "triangulitos granola";
   }
 }
 @media (max-width: 480px) {
@@ -368,9 +371,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 20px;
-    grid-template-areas: "alfajores" "budin" "triangulitos" "granola";
     gap: auto;
     justify-items: center;
+    grid-template-areas: "alfajores" "budin" "triangulitos" "granola";
   }
 }
 .productos .main-productos .dulces .line1 .alfa {
@@ -413,9 +416,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
-    grid-template-areas: "choco coco" "vegan muffins";
     gap: auto;
     justify-items: center;
+    grid-template-areas: "choco coco" "vegan muffins";
   }
 }
 @media (max-width: 480px) {
@@ -425,9 +428,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 20px;
-    grid-template-areas: "choco" "coco" "vegan" "muffins";
     gap: auto;
     justify-items: center;
+    grid-template-areas: "choco" "coco" "vegan" "muffins";
   }
 }
 .productos .main-productos .dulces .line2 .choco {
@@ -475,9 +478,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
-    grid-template-areas: "crackers grisines" "panes queso";
     gap: auto;
     justify-items: center;
+    grid-template-areas: "crackers grisines" "panes queso";
   }
 }
 @media (max-width: 480px) {
@@ -487,9 +490,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 20px;
-    grid-template-areas: "crackers" "grisines" "panes" "queso";
     gap: auto;
     justify-items: center;
+    grid-template-areas: "crackers" "grisines" "panes" "queso";
   }
 }
 .productos .main-productos .salados .line3 .crack {
@@ -676,6 +679,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: 90px auto 120px;
   grid-template-areas: "header" "main" "footer";
+  /*header*/
+  /*recetas*/
   /*footer*/
 }
 .recetas .header {
@@ -701,6 +706,7 @@
   color: white;
   font-size: 20px;
   text-transform: uppercase;
+  text-decoration: none;
   margin: 10px;
   border-radius: 3px;
 }

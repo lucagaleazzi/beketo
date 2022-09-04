@@ -1,0 +1,77 @@
+.main-inicio{
+    grid-area: main;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1.4fr 1fr;
+    grid-template-areas: 
+    "presentacion presentacion"
+    "dulzuras salados"
+    ;
+    @media (max-width: 768px){
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: 
+            "presentacion"
+            "dulzuras"
+            "salados"
+            ; 
+    }
+    .presentacion-inicio{
+        grid-area: presentacion;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image:url(/fotosbk/inicio/gif-bk.gif);
+        background-position: center;
+        background-size:cover;     
+        @media (max-width: 480px){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(./fotosbk/inicio/gif-bk.gif) no-repeat;
+            background-position: center;
+            background-size:contain;
+        }
+    }
+    .dulzuras-inicio{
+        grid-area: dulzuras;
+        background-image: url(/fotosbk/inicio/alfajores-fondo.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: $bordes;
+        .alfajores-inicio{
+            width: 250px;
+            border-radius: $radius10;
+            border: $bordes;
+            @media (max-width:768px){
+                width: 200px;
+            }
+        }
+    }
+    .salados-inicio{
+        grid-area: salados;
+        background-image: url(/fotosbk/inicio/grisines-fondo.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: $bordes;
+        .grisines-inicio{
+            width: 250px;
+            border-radius: $radius10;
+            border: $bordes;
+            @media (max-width:768px){
+                width: 200px;
+            }
+        }
+    }
+}

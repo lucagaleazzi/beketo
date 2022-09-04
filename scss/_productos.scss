@@ -1,0 +1,154 @@
+.main-productos{
+    background-color: $gris;
+    display:flex;
+    flex-direction:column;
+    grid-area: main;
+    z-index: -1;
+    .dulces{
+        display:flex;
+        flex-direction: column;
+        .titulo{
+            .dulzuras-titulo{
+                text-align: center;
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+        .line1{
+            @include linea;
+            @media (max-width:912px){
+                @include linea-tablet;
+                grid-template-areas: 
+                "alfajores budin"
+                "triangulitos granola"
+                ;
+            }
+            @media (max-width:480px){
+                @include linea-mobile;
+                grid-template-areas: 
+                "alfajores" 
+                "budin"
+                "triangulitos"
+                "granola"
+                ;
+            }
+            .alfa{
+                grid-area: alfajores;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .budlim{
+                grid-area: budin;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .trian{
+                grid-area: triangulitos;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .gran{
+                grid-area: granola;
+                .card-title{
+                    @include titulo;
+                }
+            }
+        }
+        .line2{
+            @include linea;
+            @media (max-width:912px) {
+                @include linea-tablet;
+                grid-template-areas: 
+                "choco coco"
+                "vegan muffins"
+                ;
+            }
+            @media (max-width:480px) {
+                @include linea-mobile;
+                grid-template-areas: 
+                "choco"
+                "coco"
+                "vegan"
+                "muffins"
+                ;
+            }
+            .choco{
+                grid-area: choco;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .coco{
+                grid-area: coco;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .vegan{
+                grid-area: vegan;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .muffins{
+                grid-area: muffins;
+                .card-title{
+                    @include titulo;
+                }
+            }
+        }
+    }
+    .salados{
+        .titulo-salados{
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+        }
+        .line3{
+            @include linea;
+            @media (max-width:912px){
+                @include linea-tablet;
+                grid-template-areas: 
+                "crackers grisines"
+                "panes queso"
+                ;
+            }
+            @media (max-width:480px) {
+                @include linea-mobile;
+                grid-template-areas: 
+                "crackers"
+                "grisines"
+                "panes"
+                "queso"
+                ;
+            }
+            .crack{
+                grid-area: crackers;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .grisin{
+                grid-area: grisines;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .pan{
+                grid-area: panes;
+                .card-title{
+                    @include titulo;
+                }
+            }
+            .galque{
+                grid-area: queso;
+                .card-title{
+                    @include titulo;
+                }
+            }
+        }
+    }
+}

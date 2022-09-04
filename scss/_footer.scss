@@ -1,0 +1,136 @@
+.footer{
+    grid-area: footer;
+    height: 120px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width:768px){
+        grid-area: footer;
+        height: 300px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .pie{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000;
+        color: white;
+        @media (max-width:768px){
+            height: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo-inferior{
+            margin: auto 10px;
+            @media (max-width:768px){
+                margin: auto;
+            }
+            .logo-footer{
+                @media (max-width:768px){
+                    width: 60px;
+                    border-radius: $radius10;
+                }
+                @include logo-beketo
+            }
+        }
+        .suscripcion{
+            .formulario{
+                .suscribite{
+                    color: white;
+                    cursor: default;
+                    text-align: center;
+                }
+                .email{
+                    border: none;
+                    border-radius: 5px;
+                    background-color: $gris;
+                    padding: 5px 5px;
+                    color: white;
+                }
+                .enviar{
+                    border: none;
+                    border-radius: 5px;
+                    padding: 5px 5px;
+                    cursor: pointer;
+                    #avion{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .logos{
+            display: flex;
+            margin-right: 50px;
+            @media (max-width:768px){
+                display: flex;
+                margin-right: 0;
+                margin: auto;
+            }
+            .insta{
+                background-color: $gris;
+                padding: 8px 12px;
+                border-radius: $radius10*5;
+                &:hover{
+                    background-color: #f34d59;
+                    transition: .3s;
+                }
+                @media (max-width:768px){
+                    margin: auto 5px;
+                }
+                #insta-link{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+            .wpp{
+                background-color: $gris;
+                padding: 8px 12px;
+                border-radius: $radius10*5;
+                margin-left: 10px;
+               
+                &:hover{
+                    background-color: #2eb843;
+                    transition: .3s;
+                }
+                @media (max-width:768px){
+                    margin-left: 0;
+                    margin: auto 5px;
+                }
+                #wpp-link{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .sub-pie{
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        background-color: $gris;
+        color: white;
+        @media (max-width:768px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            background-color: #35363a;
+            color: white;
+        }
+        .pedidos{
+            font-size: 1rem;
+            text-align: center;
+            @media (max-width:768px){
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
