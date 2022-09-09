@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-around;
     background-color: $gris;
+    z-index: -1;
     @media (max-width:912px){
         display: flex;
         flex-direction: column;

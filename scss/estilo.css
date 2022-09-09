@@ -733,6 +733,7 @@
   display: flex;
   justify-content: space-around;
   background-color: #35363a;
+  z-index: -1;
 }
 @media (max-width: 912px) {
   .recetas .main-recetas {
