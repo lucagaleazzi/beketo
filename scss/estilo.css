@@ -378,6 +378,7 @@
 }
 .productos .main-productos .dulces .line1 .alfa {
   grid-area: alfajores;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .dulces .line1 .alfa .card-title {
   text-align: center;
@@ -385,6 +386,7 @@
 }
 .productos .main-productos .dulces .line1 .budlim {
   grid-area: budin;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .dulces .line1 .budlim .card-title {
   text-align: center;
@@ -392,6 +394,7 @@
 }
 .productos .main-productos .dulces .line1 .trian {
   grid-area: triangulitos;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .dulces .line1 .trian .card-title {
   text-align: center;
@@ -399,6 +402,7 @@
 }
 .productos .main-productos .dulces .line1 .gran {
   grid-area: granola;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .dulces .line1 .gran .card-title {
   text-align: center;
@@ -435,6 +439,7 @@
 }
 .productos .main-productos .dulces .line2 .choco {
   grid-area: choco;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .dulces .line2 .choco .card-title {
   text-align: center;
@@ -442,6 +447,7 @@
 }
 .productos .main-productos .dulces .line2 .coco {
   grid-area: coco;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .dulces .line2 .coco .card-title {
   text-align: center;
@@ -449,6 +455,7 @@
 }
 .productos .main-productos .dulces .line2 .vegan {
   grid-area: vegan;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .dulces .line2 .vegan .card-title {
   text-align: center;
@@ -456,6 +463,7 @@
 }
 .productos .main-productos .dulces .line2 .muffins {
   grid-area: muffins;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .dulces .line2 .muffins .card-title {
   text-align: center;
@@ -497,6 +505,7 @@
 }
 .productos .main-productos .salados .line3 .crack {
   grid-area: crackers;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .salados .line3 .crack .card-title {
   text-align: center;
@@ -504,6 +513,7 @@
 }
 .productos .main-productos .salados .line3 .grisin {
   grid-area: grisines;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .salados .line3 .grisin .card-title {
   text-align: center;
@@ -511,6 +521,7 @@
 }
 .productos .main-productos .salados .line3 .pan {
   grid-area: panes;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .salados .line3 .pan .card-title {
   text-align: center;
@@ -518,6 +529,7 @@
 }
 .productos .main-productos .salados .line3 .galque {
   grid-area: queso;
+  box-shadow: 10px 5px 5px black;
 }
 .productos .main-productos .salados .line3 .galque .card-title {
   text-align: center;
@@ -719,120 +731,26 @@
   grid-area: main;
   width: 100%;
   display: flex;
-  flex-direction: column;
-}
-.recetas .main-recetas .receta-1 {
-  width: 100%;
-  height: 50%;
-  background-image: linear-gradient(black, #35363a, black);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 2fr;
-  grid-template-areas: "titulo-pan titulo-pan" "imagen-pan receta-pan";
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  background-color: #35363a;
 }
 @media (max-width: 912px) {
-  .recetas .main-recetas .receta-1 {
-    width: 100%;
-    height: 50%;
-    background-image: linear-gradient(black, #35363a, black);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 2fr;
-    grid-template-areas: "titulo-pan" "imagen-pan" "receta-pan";
-    justify-content: center;
-    align-items: center;
-  }
-}
-.recetas .main-recetas .receta-1 .titulo-receta {
-  text-align: center;
-  grid-area: titulo-pan;
-}
-.recetas .main-recetas .receta-1 .titulo-receta .titulo-pan {
-  color: white;
-  text-transform: uppercase;
-}
-.recetas .main-recetas .receta-1 .img-receta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: imagen-pan;
-}
-.recetas .main-recetas .receta-1 .img-receta .imagen-pan {
-  width: 300px;
-  border-radius: 10%;
-  border: solid 2px white;
-}
-.recetas .main-recetas .receta-1 .texto-receta {
-  text-transform: uppercase;
-  padding: 10px;
-  grid-area: receta-pan;
-}
-.recetas .main-recetas .receta-1 .texto-receta .receta-pan {
-  color: white;
-}
-@media (max-width: 912px) {
-  .recetas .main-recetas .receta-1 .texto-receta .receta-pan {
+  .recetas .main-recetas {
     display: flex;
-    justify-content: center;
-  }
-}
-.recetas .main-recetas .receta-2 {
-  width: 100%;
-  height: 50%;
-  background-image: linear-gradient(black, #35363a, black);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 2fr;
-  grid-template-areas: "titulo-mix titulo-mix" "imagen-mix receta-mix";
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 912px) {
-  .recetas .main-recetas .receta-2 {
-    width: 100%;
-    height: 50%;
-    background-image: linear-gradient(black, #35363a, black);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr 2fr;
-    grid-template-areas: "titulo-mix" "imagen-mix" "receta-mix";
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
 }
-.recetas .main-recetas .receta-2 .titulo-receta-mix {
+.recetas .main-recetas .card {
+  margin: 20px 20px;
+  box-shadow: 10px 5px 5px black;
+}
+.recetas .main-recetas .card .card-body .card-title {
   text-align: center;
-  grid-area: titulo-mix;
 }
-.recetas .main-recetas .receta-2 .titulo-receta-mix .titulo-mix {
-  color: white;
-  text-transform: uppercase;
-}
-.recetas .main-recetas .receta-2 .img-receta-mix {
+.recetas .main-recetas .card .titulo-lista {
   display: flex;
   justify-content: center;
-  align-items: center;
-  grid-area: imagen-mix;
-}
-.recetas .main-recetas .receta-2 .img-receta-mix .imagen-mix {
-  width: 300px;
-  border-radius: 10%;
-  border: solid 2px white;
-}
-.recetas .main-recetas .receta-2 .texto-receta-mix {
-  text-transform: uppercase;
-  padding: 10px;
-  grid-area: receta-mix;
-}
-.recetas .main-recetas .receta-2 .texto-receta-mix .receta-mix {
-  color: white;
-}
-@media (max-width: 912px) {
-  .recetas .main-recetas .receta-2 .texto-receta-mix .receta-mix {
-    grid-area: titulo-mix;
-  }
 }
 .recetas .footer {
   grid-area: footer;

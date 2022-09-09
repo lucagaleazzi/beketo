@@ -2,128 +2,25 @@
     grid-area: main;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    .receta-1{  
-        width: 100%;
-        height: 50%;
-        background-image: linear-gradient(black
-        , #35363a, black);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 2fr;
-        grid-template-areas: 
-        "titulo-pan titulo-pan"
-        "imagen-pan receta-pan"
-        ;
-        justify-content: center;
+    justify-content: space-around;
+    background-color: $gris;
+    @media (max-width:912px){
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        @media (max-width:912px) {
-            width: 100%;
-            height: 50%;
-            background-image: linear-gradient(black
-            , #35363a, black);
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 2fr 2fr;
-            grid-template-areas: 
-            "titulo-pan"
-            "imagen-pan"
-            "receta-pan"
-            ;
-            justify-content: center;
-            align-items: center;
-        }
-        .titulo-receta{
-            text-align: center;
-            grid-area: titulo-pan;
-            .titulo-pan{
-                color: white;
-                text-transform: uppercase;
-            }
-        }
-        .img-receta{      
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            grid-area: imagen-pan;
-            .imagen-pan{       
-                width: 300px;
-                border-radius: 10%;
-                border: solid 2px white;
-            }
-        }
-        .texto-receta{ 
-            text-transform: uppercase;
-            padding: 10px;
-            grid-area: receta-pan;
-            .receta-pan{
-                color: white;
-                @media (max-width:912px) {
-                    display: flex;
-                    justify-content: center;
-                }
-            }
-        }
     }
-    .receta-2{
-        width: 100%;
-        height: 50%;
-        background-image: linear-gradient(black
-        , #35363a, black);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 2fr;
-        grid-template-areas: 
-        "titulo-mix titulo-mix"
-        "imagen-mix receta-mix"
-        ;
-        justify-content: center;
-        align-items: center;
-        @media (max-width:912px) {
-            width: 100%;
-            height: 50%;
-            background-image: linear-gradient(black
-            , #35363a, black);
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.5fr 2fr 2fr;
-            grid-template-areas: 
-            "titulo-mix"
-            "imagen-mix"
-            "receta-mix"
-            ;
-            justify-content: center;
-            align-items: center;
-        }
-        .titulo-receta-mix{
-            text-align: center;
-            grid-area: titulo-mix;
-            .titulo-mix{
-                color: white;
-                text-transform: uppercase;
+    .card{
+        margin: 20px 20px;
+        box-shadow: 10px 5px 5px black;
+        .card-body{
+            .card-title{
+                text-align: center;
             }
         }
-        .img-receta-mix{      
+        .titulo-lista{
             display: flex;
             justify-content: center;
-            align-items: center;
-            grid-area: imagen-mix;
-            .imagen-mix{       
-                width: 300px;
-                border-radius: 10%;
-                border: solid 2px white;
-            }
         }
-        .texto-receta-mix{ 
-            text-transform: uppercase;
-            padding: 10px;
-            grid-area: receta-mix;
-            .receta-mix{
-                color: white;
-                @media (max-width:912px) {
-                    grid-area: titulo-mix;
-                }
-            }
-        }
+
     }
 }
