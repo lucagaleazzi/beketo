@@ -26,7 +26,7 @@
 @media (max-width: 768px) {
   .inicio {
     height: 240vh;
-    grid-template-rows: 90px auto 300px;
+    grid-template-rows: 90px auto 340px;
   }
 }
 .inicio .header {
@@ -141,7 +141,7 @@
 }
 .inicio .footer {
   grid-area: footer;
-  height: 120px;
+  height: 140px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -149,7 +149,7 @@
 @media (max-width: 768px) {
   .inicio .footer {
     grid-area: footer;
-    height: 300px;
+    height: 340px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -288,6 +288,23 @@
     font-size: 1rem;
     text-align: center;
   }
+}
+.inicio .footer .derechos {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  background-color: black;
+  color: white;
+}
+@media (max-width: 768px) {
+  .inicio .footer .derechos {
+    height: 40px;
+  }
+}
+.inicio .footer .derechos .copy {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
 }
 
 .productos {
@@ -537,7 +554,7 @@
 }
 .productos .footer {
   grid-area: footer;
-  height: 120px;
+  height: 140px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -545,7 +562,7 @@
 @media (max-width: 768px) {
   .productos .footer {
     grid-area: footer;
-    height: 300px;
+    height: 340px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -685,6 +702,23 @@
     text-align: center;
   }
 }
+.productos .footer .derechos {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  background-color: black;
+  color: white;
+}
+@media (max-width: 768px) {
+  .productos .footer .derechos {
+    height: 40px;
+  }
+}
+.productos .footer .derechos .copy {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
 
 .recetas {
   display: grid;
@@ -755,7 +789,7 @@
 }
 .recetas .footer {
   grid-area: footer;
-  height: 120px;
+  height: 140px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -763,7 +797,7 @@
 @media (max-width: 768px) {
   .recetas .footer {
     grid-area: footer;
-    height: 300px;
+    height: 340px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -902,4 +936,21 @@
     font-size: 1rem;
     text-align: center;
   }
+}
+.recetas .footer .derechos {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  background-color: black;
+  color: white;
+}
+@media (max-width: 768px) {
+  .recetas .footer .derechos {
+    height: 40px;
+  }
+}
+.recetas .footer .derechos .copy {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=estilo.css.map */
