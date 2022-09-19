@@ -306,6 +306,10 @@
   color: white;
   text-align: center;
 }
+.inicio .footer .derechos .copy .link-copy {
+  text-decoration: none;
+  color: white;
+}
 
 .productos {
   display: grid;
@@ -719,6 +723,10 @@
   color: white;
   text-align: center;
 }
+.productos .footer .derechos .copy .link-copy {
+  text-decoration: none;
+  color: white;
+}
 
 .recetas {
   display: grid;
@@ -953,4 +961,8 @@
   font-size: 1rem;
   color: white;
   text-align: center;
+}
+.recetas .footer .derechos .copy .link-copy {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=estilo.css.map */
